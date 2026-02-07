@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+
+def greet(name: str) -> str:
+    """Return a greeting message."""
+    return f"Hello, {name}! Welcome to Python 🚀"
+
+
+def add_numbers(a: int, b: int) -> int:
+    """Return the sum of two numbers."""
+    return a + b
+
+
+def main():
+    print("=== Sample Python Application ===")
+
+    name = input("Enter your name: ")
+    print(greet(name))
+
+    try:
+        x = int(input("Enter first number: "))
+        y = int(input("Enter second number: "))
+        result = add_numbers(x, y)
+        print(f"Sum of {x} and {y} is: {result}")
+    except ValueError:
+        print("❌ Please enter valid integers only.")
+
+    print("Program finished successfully ✅")
+
+
+if __name__ == "__main__":
+    main()
